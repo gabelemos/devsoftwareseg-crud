@@ -12,6 +12,7 @@ class Estudante:
     id: int
     name: str
     plan: str
+    professor_id: int #JR: Adicionei um professor_id (pra saber com qual professor o aluno da aula)
 
 @dataclass
 class Professor:
@@ -22,5 +23,5 @@ class Professor:
 @dataclass
 class Treinamento:
     id: int
-    student_name: str
+    student_id: int
     details: str
